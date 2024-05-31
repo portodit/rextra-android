@@ -23,6 +23,7 @@
     <color name="yellow_900">#80631A</color>
 
     //Neutral
+    <color name="white">#FFFFFF</color>
     <color name="neutral_100">#D3D3D2</color>
     <color name="neutral_200">#B5B6B5</color>
     <color name="neutral_300">#90918F</color>

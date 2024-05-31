@@ -1,3 +1,32 @@
 <resources>
+    <!-- General -->
     <string name="app_name">REXTRA</string>
+    <string name="account_name">Nama Akun</string>
+    <string name="home">Beranda</string>
+    <string name="portfolio">Portofolio</string>
+    <string name="search">Cari</string>
+    <string name="activity">Kegiatan</string>
+    <string name="profile">Profil</string>
+    <string name="logo_text">REXTRA LOGO</string>
+    <string name="notification">notification</string>
+    <string name="search_label">Ketikkan nama kegiatan disini</string>
+
+    <!-- General -->
+    <string name="new_activity">Kegiatan Terkini</string>
+    <string name="potential">Potensi Diri</string>
+    <string name="fastmove">Gercep</string>
+    <string name="calendar">Kalender</string>
+    <string name="prize">Hadiah</string>
+    <string name="level">Nilai Level</string>
+    <string name="nsv">nsv</string>
+    <string name="poin">Total Poin</string>
+
+    <!-- Portofolio -->
+    <string name="my_portofolio">Portofolio Saya</string>
+    <string name="portfolio_statistic">Statistik Portofolio</string>
+    <string name="portfolio_total">X Portofolio</string>
+    <string name="activity_total">X Kegiatan</string>
+    <string name="portfolio_list">Daftar Portofolio</string>
+
+
 </resources>
