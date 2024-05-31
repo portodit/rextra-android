@@ -1,48 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     //Primary Colors
-    <color name="blue_100">#FFFFFF</color>
-    <color name="blue_200">#FFFFFF</color>
-    <color name="blue_300">#FFFFFF</color>
-    <color name="blue_400">#FFFFFF</color>
-    <color name="blue_500">#FFFFFF</color>
-    <color name="blue_600">#FFFFFF</color>
-    <color name="blue_700">#FFFFFF</color>
-    <color name="blue_800">#FFFFFF</color>
-    <color name="blue_900">#FFFFFF</color>
+    <color name="blue_100">#CCE3F2</color>
+    <color name="blue_200">#AAD1EA</color>
+    <color name="blue_300">#80BADF</color>
+    <color name="blue_400">#55A3D4</color>
+    <color name="blue_500">#2B8CCA</color>
+    <color name="blue_600">#0075BF</color>
+    <color name="blue_700">#00629F</color>
+    <color name="blue_800">#004E7F</color>
+    <color name="blue_900">#002740</color>
 
     //Secondary Colors
-    <color name="yellow_100">#FFFFFF</color>
-    <color name="yellow_200">#FFFFFF</color>
-    <color name="yellow_300">#FFFFFF</color>
-    <color name="yellow_400">#FFFFFF</color>
-    <color name="yellow_500">#FFFFFF</color>
-    <color name="yellow_600">#FFFFFF</color>
-    <color name="yellow_700">#FFFFFF</color>
-    <color name="yellow_800">#FFFFFF</color>
-    <color name="yellow_900">#FFFFFF</color>
+    <color name="yellow_100">#FFF3D6</color>
+    <color name="yellow_200">#FFECBB</color>
+    <color name="yellow_300">#FFE299</color>
+    <color name="yellow_400">#FFD877</color>
+    <color name="yellow_500">#FFCF55</color>
+    <color name="yellow_600">#FFC533</color>
+    <color name="yellow_700">#D5A42B</color>
+    <color name="yellow_800">#AA8322</color>
+    <color name="yellow_900">#80631A</color>
 
     //Neutral
-    <color name="neutral_100">#FFFFFF</color>
-    <color name="neutral_200">#FFFFFF</color>
-    <color name="neutral_300">#FFFFFF</color>
-    <color name="neutral_400">#FFFFFF</color>
-    <color name="neutral_500">#FFFFFF</color>
-    <color name="neutral_600">#FFFFFF</color>
-    <color name="neutral_700">#FFFFFF</color>
-    <color name="neutral_800">#FFFFFF</color>
-    <color name="neutral_900">#FFFFFF</color>
+    <color name="neutral_100">#D3D3D2</color>
+    <color name="neutral_200">#B5B6B5</color>
+    <color name="neutral_300">#90918F</color>
+    <color name="neutral_400">#90918F</color>
+    <color name="neutral_500">#474945</color>
+    <color name="neutral_600">#222420</color>
+    <color name="neutral_700">#1C1E1B</color>
+    <color name="neutral_800">#111210</color>
+    <color name="neutral_900">#070706</color>
+
+    //Danger
+    <color name="danger_100">#FAD5D8</color>
+    <color name="danger_200">#F6B8BE</color>
+    <color name="danger_300">#F1959D</color>
+    <color name="danger_400">#ED727C</color>
+    <color name="danger_500">#E84E5C</color>
+    <color name="danger_600">#E42B3B</color>
+    <color name="danger_700">#E42B3B</color>
+    <color name="danger_800">#981D27</color>
+    <color name="danger_900">#4C0E14</color>
 
     //Success
-    <color name="success_100">#FFFFFF</color>
-    <color name="success_200">#FFFFFF</color>
-    <color name="success_300">#FFFFFF</color>
-    <color name="success_400">#FFFFFF</color>
-    <color name="success_500">#FFFFFF</color>
-    <color name="success_600">#FFFFFF</color>
-    <color name="success_700">#FFFFFF</color>
-    <color name="success_800">#FFFFFF</color>
-    <color name="success_900">#FFFFFF</color>
-
+    <color name="success_100">#D1E9D9</color>
+    <color name="success_200">#B2DAC0</color>
+    <color name="success_300">#8BC8A0</color>
+    <color name="success_400">#64B680</color>
+    <color name="success_500">#3EA361</color>
+    <color name="success_600">#179141</color>
+    <color name="success_700">#137936</color>
+    <color name="success_800">#0F612B</color>
+    <color name="success_900">#083016</color>
 
 </resources>
