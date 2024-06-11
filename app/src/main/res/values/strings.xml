@@ -1,4 +1,5 @@
 <resources>
+
     <!-- General -->
     <string name="app_name">REXTRA</string>
     <string name="account_name">Nama Akun</string>
@@ -21,12 +22,25 @@
     <string name="nsv">nsv</string>
     <string name="poin">Total Poin</string>
 
+    <!-- Onboarding -->
+    <string name="login">Masuk</string>
+    <string name="register">Daftar</string>
+    <string name="start_text_advice">Dengan melanjutkan, Anda setuju dengan Syarat Layanan dan Kebijakan Privasi kami.</string>
+    <string name="title_onboarding_1">Temukan Kegiatan yang Paling Cocok Buat Kamu</string>
+    <string name="description_onboarding_1">Here is an open-source project which shows sweet &amp; original onboarding ViewPagers that follows Material Design Guidelines</string>
+    <string name="title_onboarding_2">Siapkan Diri untuk Seleksi Ekstrakurikuler Pilihanmu dengan Mudah</string>
+    <string name="description_onboarding_2">We use Lottie Animations on our Intro to make it interactive &amp; pleasant. Did you already tried it ? If no, let\'s start now. It\'s just awesome</string>
+    <string name="title_onboarding_3">Atur dan Kelola Rencana Kegiatan Ekstrakurikuler Pilihan Anti Ribet</string>
+    <string name="description_onboarding_3">Our mission is to make useful &amp; subtle apps. We love help people to save time with open-source stuffs, but we also make life easier by creating new things. Good Coding!</string>
+
+
     <!-- Portofolio -->
     <string name="my_portofolio">Portofolio Saya</string>
     <string name="portfolio_statistic">Statistik Portofolio</string>
     <string name="portfolio_total">X Portofolio</string>
     <string name="activity_total">X Kegiatan</string>
     <string name="portfolio_list">Daftar Portofolio</string>
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
