@@ -29,7 +29,8 @@
         app:tabBackground="@drawable/onboarding_viewpager_selector_white"
         app:layout_constraintTop_toBottomOf="@id/viewPager"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@android:color/transparent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_info"
