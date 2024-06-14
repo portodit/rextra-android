@@ -11,7 +11,7 @@
     <string name="notification">notification</string>
     <string name="search_label">Ketikkan nama kegiatan disini</string>
 
-    <!-- General -->
+    <!-- Homepage -->
     <string name="new_activity">Kegiatan Terkini</string>
     <string name="potential">Potensi Diri</string>
     <string name="fastmove">Gercep</string>
@@ -20,6 +20,8 @@
     <string name="level">Nilai Level</string>
     <string name="nsv">nsv</string>
     <string name="poin">Total Poin</string>
+    <string name="banner">Banner</string>
+    <string name="recom_activity">Nama Kegiatan</string>
 
     <!-- Portofolio -->
     <string name="my_portofolio">Portofolio Saya</string>
@@ -28,5 +30,10 @@
     <string name="activity_total">X Kegiatan</string>
     <string name="portfolio_list">Daftar Portofolio</string>
 
+    <!-- Pencarian -->
+    <string name="activity_search">Pencarian</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_bottom_navigation_menu">bottom_navigation_menu</string>
 </resources>

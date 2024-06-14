@@ -3,6 +3,15 @@
     <style name="Base.Theme.REXTRA" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/blue_600</item>
+        <item name="colorPrimaryVariant">@color/blue_800</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/yellow_600</item>
+        <item name="colorSecondaryVariant">@color/yellow_800</item>
+        <item name="colorOnSecondary">@color/neutral_600</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
     </style>
 
     <style name="Theme.REXTRA" parent="Base.Theme.REXTRA" />

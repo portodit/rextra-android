@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/beranda"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/PortofolioFragment"
+        android:icon="@drawable/portofolio"
+        android:title="@string/portfolio" />
+
+    <item
+        android:id="@+id/PencarianFragment"
+        android:icon="@drawable/pencarian"
+        android:title="@string/search" />
+    <item
+        android:id="@+id/KegiatanFragment"
+        android:icon="@drawable/kegiatan"
+        android:title="@string/activity" />
+
+    <item
+        android:id="@+id/ProfilFragment"
+        android:icon="@drawable/profile"
+        android:title="@string/profile" />
+
+</menu>
