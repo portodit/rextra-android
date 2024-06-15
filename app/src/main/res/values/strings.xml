@@ -9,6 +9,7 @@
     <string name="profile">Profil</string>
     <string name="logo_text">REXTRA LOGO</string>
     <string name="rextra_gercep">REXTRA GERCEP</string>
+    <string name="coba_fitur">Coba Fitur</string>
     <string name="notification">notification</string>
     <string name="search_label">Ketikkan nama kegiatan disini</string>
 
@@ -33,6 +34,35 @@
 
     <!-- Pencarian -->
     <string name="activity_search">Pencarian</string>
+
+    <!-- REXTRA GERCEP -->
+    <string name="memperkenalkan">Memperkenalkan</string>
+    <string name="tentang_gercep">Tentang Gercep</string>
+    <string name="deskripsi_gercep_1">REXTRA GERCEP adalah fitur andalan dari REXTRA yang ngebantu kamu buat menemukan kegiatan ekstrakurikuler yang paling sesuai dengan kemampuan dan kemauan kamu.</string>
+    <string name="deskripsi_gercep_2">Dengan menggunakan REXTRA GERCEP, maka kamu telah menyetujui seluruh syarat dan ketentuan penggunaan aplikasi REXTRA</string>
+    <string name="petunjuk_gercep">Petunjuk Gercep</string>
+    <string name="detail_petunjuk_gercep_1">• Jawab semua pertanyaan yang ada pada fitur ini</string>
+    <string name="detail_petunjuk_gercep_2">• Cantumkan kemampuan diri kamu baik itu hard skill maupun soft skill yang ingin dikembangkani</string>
+    <string name="detail_petunjuk_gercep_3">• Jangan lupa untuk menambahkan pengalaman kegiatan yang pernah kamu ikuti </string>
+    <string name="detail_petunjuk_gercep_4">• Hasil rekomendasi yang diberikan bisa jadi belum sesuai dengan kemauan kamu, tapi jangan khawatir, kamu masih bisa buat minta ganti rekomendasi yang sudah diberikan</string>
+    <string name="dapatkan_rekomendasi">Dapatkan Rekomendasi</string>
+    <string name="preferensi_kegiatan">Preferensi Kegiatan</string>
+    <string name="deskripsi_form">Yuk temukan kegiatan ekstrakurikuler yang paling cocok dengan preferensi yang kamu inginkan</string>
+    <string name="asal_ptn">Asal Perguruan Tinggi</string>
+    <string name="asalptn_hint">Pilih Asal Perguruan Tinggi</string>
+    <string name="dd_jeniskegiatan">Jenis Kegiatan</string>
+    <string name="jeniskegiatan_hint">Pilih Jenis kegiatan</string>
+    <string name="dd_lokasikegiatan">Lokasi Pelaksanaan Kegiatan</string>
+    <string name="lokasikegiatan_hint">Pilih Lokasi Kegiatan</string>
+    <string name="deskripsi_kegiatan_form">Deskripsi Kegiatan Yang Kamu Inginkan</string>
+    <string name="deskripsikegiatan_hint">Deskripsikan kegiatan yang kamu inginkan</string>
+    <string name="pengalaman_kegiatan">Ceritakan kegiatan apa saja yang pernah kamu ikuti!</string>
+    <string name="pengalamankerja_hint">Ceritakan kegiatan apa saja yang pernah kamu ikuti!</string>
+    <string name="hasil_rekomendasi">Rekomendasi Rextra Gercep</string>
+    <string name="deskripsi_rekomendasi">Berikut ini adalah rekomendasi kegiatan yang paling sesuai dengan preferensi dan tujuan kamu</string>
+    <string name="jenis_kegiatan_rekomendasi">Jenis Kegiatan Ekstrakurikuler</string>
+    <string name="nama_kegiatan_rekomendasi">Nama Kegiatan Ekstrakurikuler</string>
+    <string name="detail_kegiatan_rekomendasi">Detail Kegiatan</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
