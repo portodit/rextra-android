@@ -4,9 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.fragment.app.Fragment
-import com.airbnb.lottie.LottieAnimationView
 import com.bangkit.rextra.databinding.FragmentOnboardingBinding
 
 class OnboardingFragment : Fragment() {
@@ -14,39 +14,30 @@ class OnboardingFragment : Fragment() {
     private lateinit var description: String
     private var imageResource = 0
     private lateinit var tvTitle: AppCompatTextView
-    //private lateinit var tvDescription: AppCompatTextView
-    private lateinit var image: LottieAnimationView
-
+    private lateinit var image: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         if (arguments != null) {
-            title =
-                requireArguments().getString(ARG_PARAM1)!!
-            description =
-                requireArguments().getString(ARG_PARAM2)!!
-            imageResource =
-                requireArguments().getInt(ARG_PARAM3)
+            title = requireArguments().getString(ARG_PARAM1)!!
+            description = requireArguments().getString(ARG_PARAM2)!!
+            imageResource = requireArguments().getInt(ARG_PARAM3)
         }
     }
 
     private var _binding: FragmentOnboardingBinding? = null
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
+    ): View {
         _binding = FragmentOnboardingBinding.inflate(inflater, container, false)
         val view = binding.root
         tvTitle = binding.textOnboardingTitle
-        //tvDescription = binding.textOnboardingDescription
         image = binding.imageOnboarding
         tvTitle.text = title
-        //tvDescription.text = description
-        image.setAnimation(imageResource)
+        image.setImageResource(imageResource)
         return view
     }
 
@@ -64,21 +55,11 @@ class OnboardingFragment : Fragment() {
             description: String,
             imageResource: Int
         ): OnboardingFragment {
-            val fragment =
-                OnboardingFragment()
+            val fragment = OnboardingFragment()
             val args = Bundle()
-            args.putString(
-                ARG_PARAM1,
-                title
-            )
-            args.putString(
-                ARG_PARAM2,
-                description
-            )
-            args.putInt(
-                ARG_PARAM3,
-                imageResource
-            )
+            args.putString(ARG_PARAM1, title)
+            args.putString(ARG_PARAM2, description)
+            args.putInt(ARG_PARAM3, imageResource)
             fragment.arguments = args
             return fragment
         }
