@@ -5,12 +5,14 @@
     <string name="home">Beranda</string>
     <string name="portfolio">Portofolio</string>
     <string name="search">Cari</string>
+    <string name="pencarian">Pencarian</string>
     <string name="activity">Kegiatan</string>
     <string name="profile">Profil</string>
     <string name="logo_text">REXTRA LOGO</string>
     <string name="rextra_gercep">REXTRA GERCEP</string>
     <string name="coba_fitur">Coba Fitur</string>
     <string name="notification">notification</string>
+    <string name="detail_kegiatan">Detail Kegiatan</string>
     <string name="search_label">Ketikkan nama kegiatan disini</string>
     <string name="tahap_pengembangan">Fitur Dalam Tahap Pengembangan</string>
     <string name="deskripsi_pengembangan_portofolio">Mohon maaf, fitur portofolio saat ini masih dalam tahap pengembangan. Mohon tunggu info updatenya hanya di media sosial resmi REXTRA.</string>
@@ -26,6 +28,7 @@
     <string name="poin">Total Poin</string>
     <string name="banner">Banner</string>
     <string name="recom_activity">Nama Kegiatan</string>
+    <string name="hasil_cari">Hasil Pencarian</string>
 
     <!-- Portofolio -->
     <string name="my_portofolio">Portofolio Saya</string>
@@ -71,7 +74,6 @@
     <string name="hasil_gercep">Hasil Gercep</string>
     <string name="daftar_favorit">Favorit</string>
     <string name="deskripsi_daftar_kegiatan">Lihat riwayat rekomendasi kegiatan dan kegiatan favorit yang pernah kamu tambahkan</string>
-
 
 
     <!-- TODO: Remove or change this placeholder text -->
