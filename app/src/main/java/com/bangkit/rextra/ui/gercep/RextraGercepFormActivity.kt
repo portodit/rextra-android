@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.ArrayAdapter
-import com.bangkit.rextra.HasilRekomendasiRextraActivity
 import com.bangkit.rextra.databinding.ActivityRextraGercepFormBinding
 
 class RextraGercepFormActivity : AppCompatActivity() {

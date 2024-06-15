@@ -12,6 +12,8 @@
     <string name="coba_fitur">Coba Fitur</string>
     <string name="notification">notification</string>
     <string name="search_label">Ketikkan nama kegiatan disini</string>
+    <string name="tahap_pengembangan">Fitur Dalam Tahap Pengembangan</string>
+    <string name="deskripsi_pengembangan_portofolio">Mohon maaf, fitur portofolio saat ini masih dalam tahap pengembangan. Mohon tunggu info updatenya hanya di media sosial resmi REXTRA.</string>
 
     <!-- Homepage -->
     <string name="new_activity">Kegiatan Terkini</string>
@@ -63,6 +65,14 @@
     <string name="jenis_kegiatan_rekomendasi">Jenis Kegiatan Ekstrakurikuler</string>
     <string name="nama_kegiatan_rekomendasi">Nama Kegiatan Ekstrakurikuler</string>
     <string name="detail_kegiatan_rekomendasi">Detail Kegiatan</string>
+
+
+    <string name="daftar_kegiatan">Daftar Kegiatan</string>
+    <string name="hasil_gercep">Hasil Gercep</string>
+    <string name="daftar_favorit">Favorit</string>
+    <string name="deskripsi_daftar_kegiatan">Lihat riwayat rekomendasi kegiatan dan kegiatan favorit yang pernah kamu tambahkan</string>
+
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
