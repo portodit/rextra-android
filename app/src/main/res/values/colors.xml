@@ -33,6 +33,7 @@
     <color name="neutral_700">#1C1E1B</color>
     <color name="neutral_800">#111210</color>
     <color name="neutral_900">#070706</color>
+    <color name="soft_grey">#DCF6F6F6</color>
 
     //Danger
     <color name="danger_100">#FAD5D8</color>

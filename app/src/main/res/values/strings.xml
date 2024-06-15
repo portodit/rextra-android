@@ -75,6 +75,26 @@
     <string name="daftar_favorit">Favorit</string>
     <string name="deskripsi_daftar_kegiatan">Lihat riwayat rekomendasi kegiatan dan kegiatan favorit yang pernah kamu tambahkan</string>
 
+    <string name="info_umum">Informasi Umum</string>
+    <string name="lokasi_kegiatan">Lokasi Kegiatan :</string>
+    <string name="isian_lokasi">Nama Lokasi Kegiatan</string>
+    <string name="durasi_kegiatan">Durasi Kegiatan :</string>
+    <string name="isian_durasi">12 Bulan</string>
+    <string name="penyelenggara">Penyelenggara</string>
+    <string name="isian_penyelenggara">Nama Penyelenggara</string>
+    <string name="tanggal_daftar">Tanggal Daftar</string>
+    <string name="isian_tanggal">10Juni - 12 Juni 2024</string>
+    <string name="deskripsi_keg">Deskripsi Kegiatan</string>
+    <string name="isian_deskripsi_kegiatan">Lorem ipsum dulur sit amet Lorem ipsum dulur sit amet Lorem ipsum dulur sit amet  Lorem ipsum dulur sit amet  Lorem ipsum dulur sit amet  Lorem ipsum dulur sit amet Lorem ipsum dulur sit amet </string>
+    <string name="persyaratan_kegiatan">Persyaratan Pendaftaran</string>
+    <string name="isi_persyaratan_kegiatan">Lorem ipsum dulur sit amet Lorem ipsum dulur sit amet Lorem ipsum dulur sit amet  Lorem ipsum dulur sit amet  Lorem ipsum dulur sit amet  Lorem ipsum dulur sit amet Lorem ipsum dulur sit amet </string>
+    <string name="skill_kegiatan">Daftar Skill Diperlukan</string>
+    <string name="daftar_skill">Lorem ipsum dulur sit amet Lorem ipsum dulur sit amet Lorem ipsum dulur sit amet  Lorem ipsum dulur sit amet  Lorem ipsum dulur sit amet  Lorem ipsum dulur sit amet Lorem ipsum dulur sit amet </string>
+    <string name="daftar_keg">Daftar</string>
+    <string name="share_activity">Share</string>
+    <string name="save_activity">Save</string>
+
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

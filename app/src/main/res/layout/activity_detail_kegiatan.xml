@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/neutral_400"
     tools:context=".DetailKegiatanActivity">
 
     <include
@@ -17,20 +16,19 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
-        android:background="@color/white"
+        android:background="@color/soft_grey"
         app:layout_constraintTop_toBottomOf="@id/rt_bar"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="8dp">
+            android:orientation="vertical">
 
             <!-- Image Banner -->
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="180dp"
                 android:src="@drawable/banner_kegiatan"
                 android:scaleType="centerCrop" />
 
@@ -39,31 +37,32 @@
                 android:id="@+id/bagian_pertama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
                 app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="8dp"
                 app:cardElevation="4dp"
                 android:padding="15dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="10dp"
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/jenis_kegiatan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/dd_jeniskegiatan"
-                        style="@style/Heading3"
+                        style="@style/BodyMediumRegular"
                         android:textColor="@color/neutral_600" />
 
                     <TextView
+                        android:id="@+id/nama_kegiatan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="2dp"
                         android:text="@string/recom_activity"
-                        style="@style/BodySmallRegular"
+                        style="@style/Heading4"
                         android:textColor="@color/neutral_500" />
 
                 </LinearLayout>
@@ -77,91 +76,97 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="8dp"
                 app:cardElevation="4dp"
                 android:padding="15dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="10dp"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/info_umum"
-                        style="@style/Heading3"
-                        android:textColor="@color/neutral_600" />
+                        style="@style/BodyMediumBold"
+                        android:textColor="@color/blue_800" />
 
                     <TableLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp">
+                        android:layout_height="wrap_content">
 
                         <TableRow>
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Durasi kegiatan:"
-                                style="@style/BodySmallRegular"
+                                android:text="@string/lokasi_kegiatan"
+                                style="@style/BodySmallSemibold"
                                 android:textColor="@color/neutral_500" />
                             <TextView
+                                android:id="@+id/tv_isian_lokasi"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="2"
-                                android:text="Nilai dari API"
+                                android:text="@string/isian_lokasi"
                                 style="@style/BodySmallRegular"
                                 android:textColor="@color/neutral_600" />
                         </TableRow>
 
                         <TableRow>
                             <TextView
+                                android:id="@+id/tv_durasi_kegiatan"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Lokasi Kegiatan:"
-                                style="@style/BodySmallRegular"
+                                android:text="@string/durasi_kegiatan"
+                                style="@style/BodySmallSemibold"
                                 android:textColor="@color/neutral_500" />
                             <TextView
+                                android:id="@+id/tv_isian_durasi"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="2"
-                                android:text="Nilai dari API"
+                                android:text="@string/isian_durasi"
                                 style="@style/BodySmallRegular"
                                 android:textColor="@color/neutral_600" />
                         </TableRow>
 
                         <TableRow>
                             <TextView
+                                android:id="@+id/tv_penyelenggara"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Penyelenggara:"
-                                style="@style/BodySmallRegular"
+                                android:text="@string/penyelenggara"
+                                style="@style/BodySmallSemibold"
                                 android:textColor="@color/neutral_500" />
                             <TextView
+                                android:id="@+id/tv_isian_penyelenggara"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="2"
-                                android:text="Nilai dari API"
+                                android:text="@string/isian_penyelenggara"
                                 style="@style/BodySmallRegular"
                                 android:textColor="@color/neutral_600" />
                         </TableRow>
 
                         <TableRow>
                             <TextView
+                                android:id="@+id/tv_tanggal_daftar"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Tanggal Pendaftaran:"
-                                style="@style/BodySmallRegular"
+                                android:text="@string/tanggal_daftar"
+                                style="@style/BodySmallSemibold"
                                 android:textColor="@color/neutral_500" />
                             <TextView
+                                android:id="@+id/tv_isian_tanggal"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="2"
-                                android:text="Nilai dari API"
+                                android:text="@string/isian_tanggal"
                                 style="@style/BodySmallRegular"
                                 android:textColor="@color/neutral_600" />
                         </TableRow>
@@ -186,20 +191,22 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="15dp"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/deskripsi_keg"
-                        style="@style/Heading3"
-                        android:textColor="@color/neutral_600" />
+                        style="@style/BodyMediumBold"
+                        android:textColor="@color/blue_800" />
 
                     <TextView
+                        android:id="@+id/tv_isian_deskripsi"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="@string/isi_deskripsi_kegiatan"
+                        android:text="@string/isian_deskripsi_kegiatan"
                         style="@style/BodySmallRegular"
                         android:textColor="@color/neutral_600"
                         android:justificationMode="inter_word" />
@@ -222,16 +229,18 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="15dp"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/persyaratan_keg"
-                        style="@style/Heading3"
-                        android:textColor="@color/neutral_600" />
+                        android:text="@string/persyaratan_kegiatan"
+                        style="@style/BodyMediumBold"
+                        android:textColor="@color/blue_800" />
 
                     <TextView
+                        android:id="@+id/tv_isi_persyaratan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -249,25 +258,25 @@
                 android:id="@+id/bagian_kelima"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="100dp"
                 app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="4dp"
                 android:padding="15dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="15dp"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/skill_keg"
-                        style="@style/Heading3"
-                        android:textColor="@color/neutral_600" />
+                        android:text="@string/skill_kegiatan"
+                        style="@style/BodyMediumBold"
+                        android:textColor="@color/blue_800" />
 
                     <TextView
+                        android:id="@+id/tv_daftar_skill"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -282,5 +291,77 @@
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rb_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Button Daftar -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_daftar"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/primary_button"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/daftar_keg"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_save"
+            app:layout_constraintWidth_percent="0.7" />
+
+        <!-- Button Save -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/small_button_bg"
+            android:drawableStart="@drawable/archive"
+            android:drawablePadding="8dp"
+            android:contentDescription="@string/save_activity"
+            app:layout_constraintStart_toEndOf="@id/btn_daftar"
+            app:layout_constraintEnd_toStartOf="@id/btn_share"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintWidth_percent="0.15" />
+
+        <!-- Button Share -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_share"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/small_button_bg"
+            android:drawableStart="@drawable/share"
+            android:drawablePadding="8dp"
+            android:contentDescription="@string/share_activity"
+            app:layout_constraintStart_toEndOf="@id/btn_save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintWidth_percent="0.15" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
