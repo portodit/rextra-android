@@ -5,9 +5,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.widget.SearchView
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.bangkit.rextra.MainActivity
 import com.bangkit.rextra.R
 import com.bangkit.rextra.databinding.FragmentHomeBinding
 import com.bangkit.rextra.ui.gercep.RextraMainActivity
@@ -20,7 +21,7 @@ class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -28,13 +29,23 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Set up the Toolbar as ActionBar
+        val toolbar = binding.homeToolbar as Toolbar
+        val mainActivity = requireActivity() as? MainActivity
+        mainActivity?.setSupportActionBar(toolbar)
+
+        // Example of using Toolbar navigation icon
+        toolbar.setNavigationOnClickListener {
+            // Handle navigation click here
+        }
+
         // Set click listener for the LinearLayout
         binding.gercep.setOnClickListener {
             startActivity(Intent(activity, RextraMainActivity::class.java))
         }
 
         // Set query text listener for the SearchView
-        binding.homeSearch.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+        binding.homeSearch.setOnQueryTextListener(object : androidx.appcompat.widget.SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 if (query != null) {
                     val bundle = Bundle().apply {

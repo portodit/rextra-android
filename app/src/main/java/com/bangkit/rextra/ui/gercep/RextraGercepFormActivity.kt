@@ -2,8 +2,8 @@ package com.bangkit.rextra.ui.gercep
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import android.widget.ArrayAdapter
+import androidx.appcompat.app.AppCompatActivity
 import com.bangkit.rextra.databinding.ActivityRextraGercepFormBinding
 
 class RextraGercepFormActivity : AppCompatActivity() {

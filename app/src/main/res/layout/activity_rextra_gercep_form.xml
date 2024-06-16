@@ -58,13 +58,12 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_asal_ptn"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:hint="@string/asalptn_hint">
-
 
                 <com.google.android.material.textfield.MaterialAutoCompleteTextView
                     android:id="@+id/actv_asal_ptn"
@@ -88,7 +87,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_jenis_kegiatan"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -117,7 +116,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_lokasi_kegiatan"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -133,8 +132,6 @@
                     android:paddingEnd="8dp"
                     android:textSize="16sp"/>
             </com.google.android.material.textfield.TextInputLayout>
-
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -171,7 +168,6 @@
                     android:scrollbars="vertical"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-
             <!-- Pengalaman Kegiatan -->
             <TextView
                 android:layout_width="wrap_content"
@@ -190,7 +186,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="30dp"
+                android:layout_marginBottom="10dp"
                 app:boxStrokeColor="@color/neutral_200"
                 app:boxStrokeWidth="1dp"
                 android:hint="@string/pengalamankerja_hint">
@@ -209,8 +205,33 @@
                     android:scrollbars="vertical"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-        </LinearLayout>
+            <!-- Unggah CV -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="Unggah CV"
+                style="@style/BodySmallSemibold"/>
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_upload_cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="30dp"
+                android:text="@string/button_upload"
+                app:icon="@drawable/ic_upload"
+                app:iconPadding="8dp"
+                app:iconTint="@color/white"
+                app:iconGravity="textStart"
+                android:backgroundTint="@color/blue_600"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
     <!-- Bottom Bar -->
