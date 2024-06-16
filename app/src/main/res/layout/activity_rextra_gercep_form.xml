@@ -65,6 +65,7 @@
                 android:layout_marginEnd="10dp"
                 android:hint="@string/asalptn_hint">
 
+
                 <com.google.android.material.textfield.MaterialAutoCompleteTextView
                     android:id="@+id/actv_asal_ptn"
                     android:layout_width="match_parent"
