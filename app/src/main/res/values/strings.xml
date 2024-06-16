@@ -59,6 +59,9 @@
     <string name="password_policy">Kata sandi harus terdiri dari minimal 8 karakter</string>
     <string name="invalid_email">Format email ini tidak sesuai</string>
 
-
+    <!-- Kalender -->
+    <string name="tahap_pengembangan">Fitur Dalam Tahap Pengembangan</string>
+    <string name="deskripsi_pengembangan_calendar">Mohon maaf, fitur kalender saat ini masih dalam tahap pengembangan. Mohon tunggu info updatenya hanya di media sosial resmi REXTRA.</string>
+    <string name="image_tahap_pengembangan">Gambar Tahap Pengembangan</string>
 
 </resources>
