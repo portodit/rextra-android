@@ -11,6 +11,7 @@
     <string name="logo_text">REXTRA LOGO</string>
     <string name="rextra_gercep">REXTRA GERCEP</string>
     <string name="coba_fitur">Coba Fitur</string>
+    <string name="profil_saya">Profil Saya</string>
     <string name="notification">notification</string>
     <string name="detail_kegiatan">Detail Kegiatan</string>
     <string name="search_label">Ketikkan nama kegiatan disini</string>
@@ -93,10 +94,18 @@
     <string name="daftar_keg">Daftar</string>
     <string name="share_activity">Share</string>
     <string name="save_activity">Save</string>
+    
+    
+    
+    <string name="profile_icon">Profil</string>
+    <string name="right_arrow">arrow</string>
+    <string name="tentang_aplikasi_icon">Tentang Aplikasi</string>
+    <string name="desc_aplikasi">Lihat informasi terkait aplikasi</string>
+    <string name="desc_ubah_profil">Perbaharui informasi akun anda</string>
+    <string name="ubah_profil">Ubah Detail Profil</string>
+    <string name="keluar_icon">Keluar Aplikasi</string>
+    <string name="desc_keluar">Akhiri sesi, keluar</string>
 
-
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_bottom_navigation_menu">bottom_navigation_menu</string>
 </resources>

@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/PencarianFragment"
-        android:name="com.bangkit.rextra.ui.pencarian.PencarianFragment"
+        android:name="com.bangkit.rextra.ui.kegiatan.PencarianFragment"
         android:label="fragment_pencarian"
         tools:layout="@layout/fragment_pencarian" />
 
