@@ -47,7 +47,7 @@
             android:textAlignment="center"
             android:textSize="24sp"
             android:fontFamily="@font/poppins_medium"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="28dp"
             android:layout_marginStart="32dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/toolbar" />
@@ -83,6 +83,7 @@
             android:layout_marginHorizontal="32dp"
             android:layout_marginTop="8dp"
             android:hint="@string/email"
+            app:hintTextAppearance="@font/poppins_regular"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_email_label"
@@ -120,19 +121,19 @@
             android:layout_marginHorizontal="32dp"
             android:layout_marginTop="8dp"
             android:hint="@string/password"
+            app:hintTextAppearance="@font/poppins_regular"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_password_label"
-            app:startIconDrawable="@drawable/ic_lock"
-            app:startIconContentDescription="icon password"
-            app:endIconMode="password_toggle">
+            app:startIconContentDescription="icon email"
+            app:startIconDrawable="@drawable/ic_email">
 
-            <com.bangkit.rextra.ui.customview.CustomEditPassword
+            <com.bangkit.rextra.ui.customview.CustomEditText
                 android:id="@+id/et_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPassword"
+                android:inputType="textEmailAddress"
                 android:paddingStart="48dp"
                 android:paddingEnd="48dp"
                 android:paddingTop="16dp"

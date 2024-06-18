@@ -47,7 +47,7 @@
             android:textAlignment="center"
             android:textSize="24sp"
             android:fontFamily="@font/poppins_medium"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="28dp"
             android:layout_marginStart="32dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/toolbar" />
@@ -57,7 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="22dp"
             android:text="@string/full_name"
             android:textSize="16sp"
             android:fontFamily="@font/poppins_medium"
@@ -81,6 +81,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/insert_full_name"
+            app:hintTextAppearance="@font/poppins_regular"
             android:layout_marginHorizontal="32dp"
             android:layout_marginTop="4dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -116,6 +117,7 @@
             android:layout_marginHorizontal="32dp"
             android:layout_marginTop="4dp"
             android:hint="@string/email"
+            app:hintTextAppearance="@font/poppins_regular"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_email_label"
@@ -152,6 +154,7 @@
             android:layout_marginHorizontal="32dp"
             android:layout_marginTop="4dp"
             android:hint="@string/password"
+            app:hintTextAppearance="@font/poppins_regular"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_password_label"
@@ -171,25 +174,65 @@
                 android:paddingBottom="16dp"/>
         </com.google.android.material.textfield.TextInputLayout>
 
+        <TextView
+            android:id="@+id/tv_confirm_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/confirm_password"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_password" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="4dp"
+            android:hint="@string/password"
+            app:hintTextAppearance="@font/poppins_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_confirm_label"
+            app:startIconDrawable="@drawable/ic_lock"
+            app:startIconContentDescription="@string/icon_password"
+            app:endIconMode="password_toggle">
+
+            <com.bangkit.rextra.ui.customview.CustomEditPassword
+                android:id="@+id/et_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:paddingStart="48dp"
+                android:paddingEnd="48dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
         <Button
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="32dp"
-            android:layout_marginTop="42dp"
+            android:layout_marginTop="28dp"
             android:text="@string/register"
             android:backgroundTint="@color/blue_500"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/til_password" />
+            app:layout_constraintTop_toBottomOf="@+id/til_confirm" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="22dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

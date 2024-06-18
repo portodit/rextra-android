@@ -45,7 +45,7 @@
     <string name="start_message_login">Masuk ke</string>
     <string name="start_message_register">Daftar ke</string>
     <string name="email">Masukkan email Anda</string>
-    <string name="password">Masukkan password Anda</string>
+    <string name="password">Masukkan kata sandi Anda</string>
     <string name="not_registered">Belum punya akun?</string>
     <string name="register_now">Daftar disini</string>
     <string name="email_address">Alamat Email</string>
@@ -57,8 +57,20 @@
     <string name="have_account">Sudah punya akun?</string>
     <string name="login_now">Masuk disini</string>
     <string name="password_policy">Kata sandi harus terdiri dari minimal 8 karakter</string>
-    <string name="invalid_email">Format email ini tidak sesuai</string>
-
+    <string name="error_fetch_data">Error ketika mengunmpulkan data!</string>
+    <string name="error_register">Gagal mendaftar!</string>
+    <string name="error_server">Ups! Terjadi kesalahan pada server. Coba lagi nanti!</string>
+    <string name="empty_image_description">Mohon tambahkan gambar dan deskripsi</string>
+    <string name="empty_email_password">Mohon isi email dan password</string>
+    <string name="invalid_email">Format email tidak valid</string>
+    <string name="empty_email_password_name">Nama, email, dan password tidak valid</string>
+    <string name="invalid_email_password">Email dan kata sandi tidak valid</string>
+    <string name="invalid_password">Kata sand tidak valid</string>
+    <string name="successful_register">Berhasil Daftar! Silakan masuk menggunakan email dan password yang terdaftar</string>
+    <string name="passwords_do_not_match">kata sandi tidak cocok dengan kata sandi sebelumnya</string>
+    <string name="icon_password">icon kata sandi</string>
+    <string name="confirm_password">Konfirmasi Kata Sandi</string>
+    <string name="dismiss">Tutup</string>
 
 
 </resources>
