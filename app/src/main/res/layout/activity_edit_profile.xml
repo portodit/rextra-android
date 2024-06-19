@@ -120,14 +120,14 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:maxWidth="488dp"
-                android:hint="@string/email"
+                android:hint="@string/my_email"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/email"
-                    android:text="@string/email"
+                    android:hint="@string/my_email"
+                    android:text="@string/my_email"
                     android:drawableEnd="@drawable/ic_pencil"
                     android:inputType="textEmailAddress" />
             </com.google.android.material.textfield.TextInputLayout>
