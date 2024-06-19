@@ -13,16 +13,7 @@
         android:theme="@style/Theme.REXTRA"
         tools:targetApi="31">
         <activity
-            android:name=".ui.profil.EditProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DetailKegiatanActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.gercep.HasilRekomendasiRextraActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.gercep.RextraMainActivity"
+            android:name=".OnboardingActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

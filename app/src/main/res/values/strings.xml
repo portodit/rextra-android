@@ -1,24 +1,18 @@
 <resources>
+
     <!-- General -->
     <string name="app_name">REXTRA</string>
     <string name="account_name">Nama Akun</string>
     <string name="home">Beranda</string>
     <string name="portfolio">Portofolio</string>
     <string name="search">Cari</string>
-    <string name="pencarian">Pencarian</string>
     <string name="activity">Kegiatan</string>
     <string name="profile">Profil</string>
     <string name="logo_text">REXTRA LOGO</string>
-    <string name="rextra_gercep">REXTRA GERCEP</string>
-    <string name="coba_fitur">Coba Fitur</string>
-    <string name="profil_saya">Profil Saya</string>
     <string name="notification">notification</string>
-    <string name="detail_kegiatan">Detail Kegiatan</string>
     <string name="search_label">Ketikkan nama kegiatan disini</string>
-    <string name="tahap_pengembangan">Fitur Dalam Tahap Pengembangan</string>
-    <string name="deskripsi_pengembangan_portofolio">Mohon maaf, fitur portofolio saat ini masih dalam tahap pengembangan. Mohon tunggu info updatenya hanya di media sosial resmi REXTRA.</string>
 
-    <!-- Homepage -->
+    <!-- General -->
     <string name="new_activity">Kegiatan Terkini</string>
     <string name="potential">Potensi Diri</string>
     <string name="fastmove">Gercep</string>
@@ -27,9 +21,18 @@
     <string name="level">Nilai Level</string>
     <string name="nsv">nsv</string>
     <string name="poin">Total Poin</string>
-    <string name="banner">Banner</string>
-    <string name="recom_activity">Nama Kegiatan</string>
-    <string name="hasil_cari">Hasil Pencarian</string>
+
+    <!-- Onboarding -->
+    <string name="login">Masuk</string>
+    <string name="register">Daftar</string>
+    <string name="start_text_advice">Dengan melanjutkan, Anda setuju dengan Syarat Layanan dan Kebijakan Privasi kami.</string>
+    <string name="title_onboarding_1">Temukan Kegiatan yang Paling Cocok Buat Kamu</string>
+    <string name="description_onboarding_1">Here is an open-source project which shows sweet &amp; original onboarding ViewPagers that follows Material Design Guidelines</string>
+    <string name="title_onboarding_2">Siapkan Diri untuk Seleksi Ekstrakurikuler Pilihanmu dengan Mudah</string>
+    <string name="description_onboarding_2">We use Lottie Animations on our Intro to make it interactive &amp; pleasant. Did you already tried it ? If no, let\'s start now. It\'s just awesome</string>
+    <string name="title_onboarding_3">Atur dan Kelola Rencana Kegiatan Ekstrakurikuler Pilihan Anti Ribet</string>
+    <string name="description_onboarding_3">Our mission is to make useful &amp; subtle apps. We love help people to save time with open-source stuffs, but we also make life easier by creating new things. Good Coding!</string>
+
 
     <!-- Portofolio -->
     <string name="my_portofolio">Portofolio Saya</string>
@@ -38,86 +41,36 @@
     <string name="activity_total">X Kegiatan</string>
     <string name="portfolio_list">Daftar Portofolio</string>
 
-    <!-- Pencarian -->
-    <string name="activity_search">Pencarian</string>
-
-    <!-- REXTRA GERCEP -->
-    <string name="memperkenalkan">Memperkenalkan</string>
-    <string name="tentang_gercep">Tentang Gercep</string>
-    <string name="deskripsi_gercep_1">REXTRA GERCEP adalah fitur andalan dari REXTRA yang ngebantu kamu buat menemukan kegiatan ekstrakurikuler yang paling sesuai dengan kemampuan dan kemauan kamu.</string>
-    <string name="deskripsi_gercep_2">Dengan menggunakan REXTRA GERCEP, maka kamu telah menyetujui seluruh syarat dan ketentuan penggunaan aplikasi REXTRA</string>
-    <string name="petunjuk_gercep">Petunjuk Gercep</string>
-    <string name="detail_petunjuk_gercep_1">• Jawab semua pertanyaan yang ada pada fitur ini</string>
-    <string name="detail_petunjuk_gercep_2">• Cantumkan kemampuan diri kamu baik itu hard skill maupun soft skill yang ingin dikembangkani</string>
-    <string name="detail_petunjuk_gercep_3">• Jangan lupa untuk menambahkan pengalaman kegiatan yang pernah kamu ikuti </string>
-    <string name="detail_petunjuk_gercep_4">• Hasil rekomendasi yang diberikan bisa jadi belum sesuai dengan kemauan kamu, tapi jangan khawatir, kamu masih bisa buat minta ganti rekomendasi yang sudah diberikan</string>
-    <string name="dapatkan_rekomendasi">Dapatkan Rekomendasi</string>
-    <string name="preferensi_kegiatan">Preferensi Kegiatan</string>
-    <string name="deskripsi_form">Yuk temukan kegiatan ekstrakurikuler yang paling cocok dengan preferensi yang kamu inginkan</string>
-    <string name="asal_ptn">Asal Perguruan Tinggi</string>
-    <string name="asalptn_hint">Pilih Asal Perguruan Tinggi</string>
-    <string name="dd_jeniskegiatan">Jenis Kegiatan</string>
-    <string name="jeniskegiatan_hint">Pilih Jenis kegiatan</string>
-    <string name="dd_lokasikegiatan">Lokasi Pelaksanaan Kegiatan</string>
-    <string name="lokasikegiatan_hint">Pilih Lokasi Kegiatan</string>
-    <string name="deskripsi_kegiatan_form">Deskripsi Kegiatan Yang Kamu Inginkan</string>
-    <string name="deskripsikegiatan_hint">Deskripsikan kegiatan yang kamu inginkan</string>
-    <string name="pengalaman_kegiatan">Ceritakan kegiatan apa saja yang pernah kamu ikuti!</string>
-    <string name="pengalamankerja_hint">Ceritakan kegiatan apa saja yang pernah kamu ikuti!</string>
-    <string name="hasil_rekomendasi">Rekomendasi Rextra Gercep</string>
-    <string name="deskripsi_rekomendasi">Berikut ini adalah rekomendasi kegiatan yang paling sesuai dengan preferensi dan tujuan kamu</string>
-    <string name="jenis_kegiatan_rekomendasi">Jenis Kegiatan Ekstrakurikuler</string>
-    <string name="nama_kegiatan_rekomendasi">Nama Kegiatan Ekstrakurikuler</string>
-    <string name="detail_kegiatan_rekomendasi">Detail Kegiatan</string>
-    <string name="lokasi_kegiatan_description">Pilih lokasi kegiatan dari daftar yang tersedia</string>
-    <string name="jenis_kegiatan_description">Pilih jenis kegiatan dari daftar yang tersedia</string>
-    <string name="asal_ptn_description">Pilih asal perguruan tinggi/negara dari daftar yang tersedia</string>
+    <!-- Authentication -->
+    <string name="start_message_login">Masuk ke</string>
+    <string name="start_message_register">Daftar ke</string>
+    <string name="email">Masukkan email Anda</string>
+    <string name="password">Masukkan kata sandi Anda</string>
+    <string name="not_registered">Belum punya akun?</string>
+    <string name="register_now">Daftar disini</string>
+    <string name="email_address">Alamat Email</string>
+    <string name="password_text">Kata Sandi</string>
+    <string name="back">Kembali</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="name">insert_full_name</string>
+    <string name="insert_full_name">Masukkan nama lengkap Anda</string>
+    <string name="have_account">Sudah punya akun?</string>
+    <string name="login_now">Masuk disini</string>
+    <string name="password_policy">Kata sandi harus terdiri dari minimal 8 karakter</string>
+    <string name="error_fetch_data">Error ketika mengunmpulkan data!</string>
+    <string name="error_register">Gagal mendaftar!</string>
+    <string name="error_server">Ups! Terjadi kesalahan pada server. Coba lagi nanti!</string>
+    <string name="empty_image_description">Mohon tambahkan gambar dan deskripsi</string>
+    <string name="empty_email_password">Mohon isi email dan password</string>
+    <string name="invalid_email">Format email tidak valid</string>
+    <string name="empty_email_password_name">Nama, email, dan password tidak valid</string>
+    <string name="invalid_email_password">Email dan kata sandi tidak valid</string>
+    <string name="invalid_password">Kata sand tidak valid</string>
+    <string name="successful_register">Berhasil Daftar! Silakan masuk menggunakan email dan password yang terdaftar</string>
+    <string name="passwords_do_not_match">kata sandi tidak cocok dengan kata sandi sebelumnya</string>
+    <string name="icon_password">icon kata sandi</string>
+    <string name="confirm_password">Konfirmasi Kata Sandi</string>
+    <string name="dismiss">Tutup</string>
 
 
-    <string name="daftar_kegiatan">Daftar Kegiatan</string>
-    <string name="hasil_gercep">Hasil Gercep</string>
-    <string name="daftar_favorit">Favorit</string>
-    <string name="deskripsi_daftar_kegiatan">Lihat riwayat rekomendasi kegiatan dan kegiatan favorit yang pernah kamu tambahkan</string>
-
-    <string name="info_umum">Informasi Umum</string>
-    <string name="lokasi_kegiatan">Lokasi Kegiatan :</string>
-    <string name="isian_lokasi">Nama Lokasi Kegiatan</string>
-    <string name="durasi_kegiatan">Durasi Kegiatan :</string>
-    <string name="isian_durasi">12 Bulan</string>
-    <string name="penyelenggara">Penyelenggara</string>
-    <string name="isian_penyelenggara">Nama Penyelenggara</string>
-    <string name="tanggal_daftar">Tanggal Daftar</string>
-    <string name="isian_tanggal">10Juni - 12 Juni 2024</string>
-    <string name="deskripsi_keg">Deskripsi Kegiatan</string>
-    <string name="isian_deskripsi_kegiatan">Lorem ipsum dulur sit amet Lorem ipsum dulur sit amet Lorem ipsum dulur sit amet  Lorem ipsum dulur sit amet  Lorem ipsum dulur sit amet  Lorem ipsum dulur sit amet Lorem ipsum dulur sit amet </string>
-    <string name="persyaratan_kegiatan">Persyaratan Pendaftaran</string>
-    <string name="isi_persyaratan_kegiatan">Lorem ipsum dulur sit amet Lorem ipsum dulur sit amet Lorem ipsum dulur sit amet  Lorem ipsum dulur sit amet  Lorem ipsum dulur sit amet  Lorem ipsum dulur sit amet Lorem ipsum dulur sit amet </string>
-    <string name="skill_kegiatan">Daftar Skill Diperlukan</string>
-    <string name="daftar_skill">Lorem ipsum dulur sit amet Lorem ipsum dulur sit amet Lorem ipsum dulur sit amet  Lorem ipsum dulur sit amet  Lorem ipsum dulur sit amet  Lorem ipsum dulur sit amet Lorem ipsum dulur sit amet </string>
-    <string name="daftar_keg">Daftar</string>
-    <string name="share_activity">Share</string>
-    <string name="save_activity">Save</string>
-    <string name="button_upload">Pilih Berkas</string>
-
-
-    <string name="profile_icon">Profil</string>
-    <string name="right_arrow">arrow</string>
-    <string name="tentang_aplikasi_icon">Tentang Aplikasi</string>
-    <string name="desc_aplikasi">Lihat informasi terkait aplikasi</string>
-    <string name="desc_ubah_profil">Perbaharui informasi akun anda</string>
-    <string name="ubah_profil">Ubah Detail Profil</string>
-    <string name="keluar_icon">Keluar Aplikasi</string>
-    <string name="desc_keluar">Akhiri sesi, keluar dari aplikasi</string>
-    <string name="edit_profil">Edit Profil</string>
-    <string name="nama_lengkap">Nama Lengkap</string>
-    <string name="username">Username</string>
-    <string name="email">Alamat Email</string>
-    <string name="hapus_foto">Hapus Foto</string>
-    <string name="ubah_foto">Ubah Foto</string>
-    <string name="save">Simpan</string>
-
-
-
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_bottom_navigation_menu">bottom_navigation_menu</string>
 </resources>
