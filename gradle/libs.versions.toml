@@ -21,6 +21,7 @@ constraintlayout = "2.1.4"
 retrofit = "2.10.0"
 pagingCommonAndroid = "3.3.0"
 espressoIdlingResource = "3.5.1"
+baselibrary = "3.2.0-alpha11"
 
 [libraries]
 androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activityKtx" }
@@ -43,6 +44,7 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 androidx-paging-common-android = { group = "androidx.paging", name = "paging-common-android", version.ref = "pagingCommonAndroid" }
 androidx-espresso-idling-resource = { group = "androidx.test.espresso", name = "espresso-idling-resource", version.ref = "espressoIdlingResource" }
+androidx-baseLibrary = { group = "androidx.databinding", name = "baseLibrary", version.ref = "baselibrary" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
