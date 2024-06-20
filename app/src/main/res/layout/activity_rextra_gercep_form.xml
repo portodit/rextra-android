@@ -58,7 +58,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_asal_ptn"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -66,12 +66,14 @@
                 android:hint="@string/asalptn_hint">
 
                 <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                     android:id="@+id/actv_asal_ptn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/input_bg"
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp"
+                    android:inputType="none"
                     android:textSize="16sp"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -87,7 +89,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_jenis_kegiatan"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -99,6 +101,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/input_bg"
+                    android:inputType="none"
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp"
                     android:textSize="16sp"/>
@@ -116,7 +119,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_lokasi_kegiatan"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -128,6 +131,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/input_bg"
+                    android:inputType="none"
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp"
                     android:textSize="16sp"/>
@@ -205,31 +209,7 @@
                     android:scrollbars="vertical"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Unggah CV -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="8dp"
-                android:text="Unggah CV"
-                style="@style/BodySmallSemibold"/>
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_upload_cv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="30dp"
-                android:text="@string/button_upload"
-                app:icon="@drawable/ic_upload"
-                app:iconPadding="8dp"
-                app:iconTint="@color/white"
-                app:iconGravity="textStart"
-                android:backgroundTint="@color/blue_600"
-                android:textColor="@color/white"/>
+           \
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

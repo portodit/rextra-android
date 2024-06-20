@@ -12,6 +12,9 @@ class ViewModelFactory(private val pref: UserPreferences) :
         if (modelClass.isAssignableFrom(DataStoreViewModel::class.java)) {
             return DataStoreViewModel(pref) as T
         }
+        if (modelClass.isAssignableFrom(HomeViewModel::class.java)) {
+            return HomeViewModel() as T
+        }
         throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
     }
 }

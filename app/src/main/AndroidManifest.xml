@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,6 +17,28 @@
         <activity
             android:name=".OnboardingActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.kegiatan_detail.DetailKegiatanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.gercep.RextraMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.gercep.RextraGercepFormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.gercep.HasilRekomendasiRextraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.profil.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AuthenticationActivity"
+            android:label="Authentication Activity"
+            android:exported="false">
+        </activity>
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

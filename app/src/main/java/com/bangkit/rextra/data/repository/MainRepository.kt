@@ -46,7 +46,7 @@ class MainRepository(
 
                     if (response.isSuccessful) {
                         _userLogin.value = responseBody!!
-                        _message.value = "Halo ${_userLogin.value!!.loginResult.name}!"
+                        _message.value = "Halo ${_userLogin.value?.loginResult?.name}!"
                     } else {
                         when (response.code()) {
                             401 -> _message.value =

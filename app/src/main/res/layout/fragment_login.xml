@@ -125,15 +125,15 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_password_label"
-            app:startIconContentDescription="icon email"
-            app:startIconDrawable="@drawable/ic_email">
+            app:startIconContentDescription="icon password"
+            app:startIconDrawable="@drawable/ic_lock">
 
             <com.bangkit.rextra.ui.customview.CustomEditText
                 android:id="@+id/et_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textEmailAddress"
+                android:inputType="textPassword"
                 android:paddingStart="48dp"
                 android:paddingEnd="48dp"
                 android:paddingTop="16dp"

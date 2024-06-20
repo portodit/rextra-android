@@ -10,9 +10,13 @@ class AuthenticationActivity : AppCompatActivity() {
         setContentView(R.layout.activity_auth)
 
         if (savedInstanceState == null) {
+            val fragment = when (intent.getStringExtra("fragment")) {
+                "register" -> RegisterFragment()
+                else -> LoginFragment()
+            }
             supportFragmentManager.beginTransaction().replace(
                 R.id.auth_container,
-                LoginFragment()
+                fragment
             ).commit()
         }
     }

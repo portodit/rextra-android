@@ -4,7 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
+import com.bangkit.rextra.data.request.RecommendRequest
+import com.bangkit.rextra.data.response.recommendation.RecommendResult
 import com.bangkit.rextra.databinding.ActivityRextraGercepFormBinding
+import com.bangkit.rextra.ui.gercep.HasilRekomendasiRextraActivity.Companion.RECOMMEND_REQUEST
 
 class RextraGercepFormActivity : AppCompatActivity() {
 
@@ -17,6 +20,36 @@ class RextraGercepFormActivity : AppCompatActivity() {
 
         setupAutoCompleteTextViews()
         setupButtonClickListener()
+        binding.rtBar.btnBack.setOnClickListener {
+            onBackPressed()
+            finish()
+        }
+        binding.btnRextraGercepForm.setOnClickListener {
+            val ptn = binding.actvAsalPtn.text.toString()
+            val jenisKegiatan = binding.actvJenisKegiatan.text.toString()
+            val lokasi = binding.actvLokasiKegiatan.text.toString()
+            val deskripsi = binding.etDeskripsiKegiatan.text.toString()
+            val pengalamanKegiatan = binding.etPengalamanKegiatan.text.toString()
+            
+            val requestBody = RecommendRequest(
+                ptn = ptn,
+                kegiatan = jenisKegiatan,
+                lokasi = lokasi,
+                deskripsi = deskripsi,
+                kegiatanPernah = pengalamanKegiatan
+            )
+
+            binding.btnRextraGercepForm.setOnClickListener {
+                navigateToResult(requestBody)
+            }
+        }
+    }
+
+    fun navigateToResult(q: RecommendRequest) {
+        Intent(this, HasilRekomendasiRextraActivity::class.java).apply {
+            putExtra(RECOMMEND_REQUEST, q)
+            startActivity(this)
+        }
     }
 
     private fun setupAutoCompleteTextViews() {
@@ -35,4 +68,5 @@ class RextraGercepFormActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
 }

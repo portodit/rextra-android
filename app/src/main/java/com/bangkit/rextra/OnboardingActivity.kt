@@ -1,5 +1,6 @@
 package com.bangkit.rextra
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.Spannable
 import android.text.SpannableString
@@ -15,7 +16,8 @@ import com.google.android.material.tabs.TabLayoutMediator
 class OnboardingActivity : AppCompatActivity() {
 
     private lateinit var mViewPager: ViewPager2
-    private lateinit var btnCreateAccount: Button
+    private lateinit var btnLogin: Button
+    private lateinit var btnRegister: Button
     private lateinit var binding: ActivityOnboardingBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,9 +26,19 @@ class OnboardingActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        btnCreateAccount = binding.btnLoginOnboarding
-        btnCreateAccount.setOnClickListener {
-            finish()
+        btnLogin = binding.btnLoginOnboarding
+        btnRegister = binding.btnRegisterOnboarding
+
+        btnLogin.setOnClickListener {
+            val intent = Intent(this, AuthenticationActivity::class.java)
+            intent.putExtra("fragment", "login")
+            startActivity(intent)
+        }
+
+        btnRegister.setOnClickListener {
+            val intent = Intent(this, AuthenticationActivity::class.java)
+            intent.putExtra("fragment", "register")
+            startActivity(intent)
         }
 
         mViewPager = findViewById(R.id.viewPager)

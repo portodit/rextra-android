@@ -12,16 +12,17 @@ import retrofit2.http.POST
 
 
 interface APIService {
-    @POST("login")
+    @POST("auth/login")
     @FormUrlEncoded
     fun login(
         @Field("email") email: String,
         @Field("password") password: String
     ): Call<Login>
 
-    @POST("register")
+    @POST("auth/register")
     fun registUser(@Body requestRegister: RegisterData): Call<Register>
 
-    @POST("login")
+
+    @POST("auth/login")
     fun loginUser(@Body requestLogin: LoginData): Call<Login>
 }
