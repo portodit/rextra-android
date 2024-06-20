@@ -68,6 +68,7 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.paging.common.android)
     implementation(libs.androidx.espresso.idling.resource)
+    implementation(libs.androidx.baseLibrary)
     testImplementation (libs.junit)
     androidTestImplementation (libs.androidx.espresso.core)
     implementation ("com.airbnb.android:lottie:6.0.1")
@@ -109,4 +110,12 @@ dependencies {
 
     // splash screen
     implementation("androidx.core:core-splashscreen:1.0.1")
+
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:okhttp:4.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.0")
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+    implementation("com.github.dhaval2404:imagepicker:2.1")
+    implementation("de.hdodenhof:circleimageview:3.1.0")
 }
