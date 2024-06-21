@@ -20,7 +20,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField("String", "API", "\"https://backend-rextra-m4aizr3wda-et.a.run.app/api/v1/\"")
+        buildConfigField("String", "API", "\"https://backend02-m4aizr3wda-et.a.run.app/api/v1/\"")
     }
 
     testOptions {

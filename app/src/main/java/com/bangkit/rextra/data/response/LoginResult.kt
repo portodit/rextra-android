@@ -16,4 +16,3 @@ data class LoginResult(
     @field:SerializedName("token")
     val token: String?
 ) : Parcelable
-

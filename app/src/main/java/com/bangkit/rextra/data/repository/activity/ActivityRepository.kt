@@ -7,7 +7,7 @@ import com.bangkit.rextra.data.response.activity.ActivityDetailResponse
 class ActivityRepository {
     private val apiService = APIConfig.getActivityApiService()
     companion object {
-        const val tempToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEyLCJpYXQiOjE3MTg5MDQ4NzAsImV4cCI6MTcxODkwODQ3MH0.dFEzfSRinN6AeLcqCjChuVjMTunwNnJLdprTF2O6_ws"
+        const val tempToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjExLCJpYXQiOjE3MTg5NjE3MTF9.JrEkdWn6fvKIEwTXPUq82X2Hn54s2BECGZ5MmSmAoI4"
     }
 
     suspend fun fetchActivities(token: String): ActivitiesResponse {
