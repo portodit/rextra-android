@@ -7,12 +7,15 @@ import com.google.gson.annotations.SerializedName
 @Parcelize
 data class Login(
 
-    @field:SerializedName("loginResult")
-    val loginResult: LoginResult,
+    @field:SerializedName("success")
+    val success: Boolean?,
 
-    @field:SerializedName("error")
-    val error: Boolean,
+    @field:SerializedName("statusCode")
+    val statusCode: Int?,
 
     @field:SerializedName("message")
-    val message: String
+    val message: String?,
+
+    @field:SerializedName("token")
+    val token: String?
 ) : Parcelable

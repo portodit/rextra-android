@@ -46,13 +46,11 @@ class MainRepository(
 
                     if (response.isSuccessful) {
                         _userLogin.value = responseBody!!
-                        _message.value = "Halo ${_userLogin.value?.loginResult?.name}!"
+                        _isSuccess.value = true
                     } else {
                         when (response.code()) {
-                            401 -> _message.value =
-                                "Email atau password salah"
-                            408 -> _message.value =
-                                "Koneksi internet buruk"
+                            401 -> _message.value = "Email atau password salah"
+                            408 -> _message.value = "Koneksi internet buruk"
                             else -> _message.value = "Error: " + response.message()
                         }
                     }

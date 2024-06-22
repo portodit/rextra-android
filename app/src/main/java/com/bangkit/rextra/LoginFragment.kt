@@ -1,6 +1,5 @@
 package com.bangkit.rextra
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -15,9 +14,10 @@ import com.bangkit.rextra.data.viewmodel.MainViewModelFactory
 import com.bangkit.rextra.data.viewmodel.ViewModelFactory
 import com.bangkit.rextra.databinding.FragmentLoginBinding
 import com.bangkit.rextra.ui.customview.CustomDialog
-import com.bangkit.rextra.MyApplication.Companion.dataStore
+import com.bangkit.rextra.ui.home.HomeFragment
 import com.bangkit.rextra.utils.Helper
 import com.bangkit.rextra.utils.UserPreferences
+import com.bangkit.rextra.MyApplication.Companion.dataStore
 
 
 class LoginFragment : Fragment() {
@@ -44,9 +44,7 @@ class LoginFragment : Fragment() {
 
         dataStoreViewModel.getLoginSession().observe(viewLifecycleOwner) { sessionTrue ->
             if (sessionTrue) {
-                val intent = Intent(requireActivity(), MainActivity::class.java)
-                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                startActivity(intent)
+                navigateToHome()
             }
         }
 
@@ -87,11 +85,16 @@ class LoginFragment : Fragment() {
             binding.loading.visibility = if (isLoading) View.VISIBLE else View.GONE
         }
 
-        loginViewModel.message.observe(viewLifecycleOwner) { message ->
-            saveLoginData(
-                message,
-                dataStoreViewModel
-            )
+        loginViewModel.message.observe(viewLifecycleOwner) {
+        }
+
+        loginViewModel.isSuccess.observe(viewLifecycleOwner) { isSuccess ->
+            if (isSuccess) {
+                val user = loginViewModel.userlogin.value
+                dataStoreViewModel.saveLoginSession(true)
+                user?.token?.let { dataStoreViewModel.saveToken(it) }
+                navigateToHome()
+            }
         }
 
         loginViewModel.isError.observe(viewLifecycleOwner) { isError ->
@@ -99,20 +102,16 @@ class LoginFragment : Fragment() {
                 CustomDialog(
                     requireContext(),
                     getString(R.string.error_server),
-                    R.raw.error).show()
+                    R.raw.error
+                ).show()
             }
         }
     }
 
-    private fun saveLoginData(message: String, dataStoreViewModel: DataStoreViewModel) {
-        if (message.contains("Hello")) {
-            val user = loginViewModel.userlogin.value
-            dataStoreViewModel.saveLoginSession(true)
-            user?.loginResult!!.token?.let { dataStoreViewModel.saveToken(it) }
-            user.loginResult.name?.let { dataStoreViewModel.saveName(it) }
-            user.loginResult.userId?.let { dataStoreViewModel.saveUser(it) }
-        } else {
-            CustomDialog(requireContext(), message, R.raw.error)
+    private fun navigateToHome() {
+        parentFragmentManager.commit {
+            replace(R.id.nsv, HomeFragment(), HomeFragment::class.java.simpleName)
+            addToBackStack(null)
         }
     }
 }
